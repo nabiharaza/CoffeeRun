@@ -27,6 +27,10 @@ So, whose buying me coffee today? ☕️
   <img src="docs/top-level-design.png" alt="top-level-design" title="Top Level Design" width="75%">
 </div>
 
+
+## 🎥 Video Demo
+- Want to see a quick video tutorial/demo? 
+- Here, check out the [YouTube video](https://youtu.be/hVpvOpddRMY).
 ## Tech Stack
 
 **Frontend:**
@@ -105,3 +109,4 @@ CoffeeRun/
 - Users cannot be added/removed once the group is created.
 - Searching capability is not available for groups
 - Error handling is limited.
+- Pagination is not supported for api calls.
