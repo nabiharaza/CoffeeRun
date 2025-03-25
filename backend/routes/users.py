@@ -1,7 +1,5 @@
-from sqlite3 import IntegrityError
-
 from flask import Blueprint, request, jsonify
-from backend.utils.db import get_db_connection
+from utils.db import get_db_connection
 
 bp = Blueprint('users', __name__, url_prefix='/api/users')
 
@@ -41,7 +39,7 @@ def create_user():
                         for i, value in enumerate(cur.fetchone()))
             conn.commit()
             return jsonify(user), 201
-    except IntegrityError:
+    except Exception as e:
         return jsonify({'error': 'Email already exists'}), 400
     finally:
         conn.close()

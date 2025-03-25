@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from backend.utils.db import get_db_connection
+from utils.db import get_db_connection
 
 bp = Blueprint('groups', __name__, url_prefix='/api/groups')
 
