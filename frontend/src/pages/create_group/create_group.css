@@ -1,0 +1,143 @@
+.group-form-container {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.group-form-container h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #4a2c2a;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.group-form-container label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a2c2a;
+  margin-bottom: 0.5rem;
+}
+
+.group-form-container input,
+.group-form-container textarea {
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.group-form-container input:focus,
+.group-form-container textarea:focus {
+  border-color: #6f4e37;
+  box-shadow: 0 0 0 2px rgba(111, 78, 55, 0.2);
+}
+
+.member-selection {
+  position: relative;
+}
+
+.member-selection input {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: .5rem 0 1rem;
+  padding: .75rem;
+  transition: all .3s ease;
+  width: 95%;
+}
+
+.member-list {
+  position: absolute;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.member-item {
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.member-item .add-button {
+    margin-left: 1rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+    border-radius: 20px;
+}
+
+.member-item:hover {
+  background-color: #f5f5f5;
+}
+
+.selected-members-container {
+  min-height: 120px;
+  padding: 0.5rem;
+  background-color: #faf7f2;
+  border-radius: 0.5rem;
+}
+
+.member-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf7f2;
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+}
+
+.member-tag button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.member-tag button:hover {
+  color: #e53935;
+}
+
+.member-name {
+  padding-left: 1rem;
+}
+
+.btn-group {
+    justify-content: center;
+}
+
+form div {
+  text-align: left;
+}
+
+form div label {
+  display: block;
+  margin-bottom: 0.5rem; 
+}
+
+form div input,
+form div textarea {
+  width: 100%;
+  text-align: left;
+}

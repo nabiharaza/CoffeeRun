@@ -1,0 +1,633 @@
+.group-detail-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+.group-detail-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Main layout grid */
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: stretch;
+}
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.left-column .card {
+  flex: 1;
+}
+
+.right-side-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #4a2c2a;
+  border-bottom: 1px solid #e0d3c7;
+  padding-bottom: 0.25rem;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6f4e37;
+  margin-bottom: 0.75rem;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+  color: #6f4e37;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: #faf7f2;
+}
+
+/* Individual cost items - Side by side */
+.expense-item {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #faf7f2;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-left: 3px solid tan;
+}
+
+.expense-item label {
+  flex: 1;
+  color: #6f4e37;
+  font-size: 0.875rem;
+}
+
+.expense-item .flex {
+  flex: 2;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.expense-item input {
+  flex: 1;
+}
+
+/* Balances - Left aligned and smaller */
+.balance-card {
+  padding: 0.75rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  max-height: 400px; /* Adjust as needed */
+}
+
+.balance-card ul li {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  border-left: 3px solid tan;
+}
+.balance-scroll-container {
+    overflow-y: auto;
+    padding-right: 8px; /* Space for scrollbar */
+}
+
+.balance-scroll-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.balance-scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.balance-scroll-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.balance-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Transaction history - Improved styling */
+.transaction-list {
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+/* Custom scrollbar styling */
+.transaction-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.transaction-list::-webkit-scrollbar-track {
+  background: #f0e9e2;
+  border-radius: 4px;
+}
+
+.transaction-list::-webkit-scrollbar-thumb {
+  background: #8c7b6b;
+  border-radius: 4px;
+}
+
+.transaction-list::-webkit-scrollbar-thumb:hover {
+  background: #6f4e37;
+}
+
+.transaction-item {
+  background-color: #faf7f2;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  transition: all 0.2s ease;
+  border: 1px solid #e0d3c7;
+}
+
+.transaction-item:hover {
+  background-color: #f0e9e2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffaf0;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #4a2c2a;
+  font-size: 0.875rem;
+}
+
+.transaction-date {
+  font-size: 0.875rem;
+  color: #8c7b6b;
+}
+
+.transaction-details {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.transaction-details li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+  font-size: 0.875rem;
+  color: #6f4e37;
+  border-bottom: 1px dashed #e0d3c7;
+}
+
+.transaction-details li:last-child {
+  border-bottom: none;
+}
+
+/* Buttons */
+.button {
+  background-color: #6f4e37;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  min-width: 100px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #5a3c2c;
+  transform: translateY(-1px);
+}
+
+.alt-button {
+  background-color: #e0d3c7;
+  color: #4a2c2a;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  min-width: 100px;
+  text-align: center;
+}
+
+.alt-button:hover {
+  background-color: #d2b48c;
+  transform: translateY(-1px);
+}
+
+.alt-button:disabled {
+  background-color: #f0e9e2;
+  color: #8c7b6b;
+  cursor: not-allowed;
+}
+
+/* Form elements */
+.input-field {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #d2b48c;
+  border-radius: 20px;
+  margin-bottom: 0;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fffcf8;
+}
+/* Add this to your CSS */
+.input-field {
+  font-size: 0.875rem; /* 14px - same as your other small text */
+  padding: 0.375rem 0.75rem; /* Slightly more compact padding */
+}
+
+.compact-input {
+  font-size: 0.8125rem; /* 13px - one step smaller than your small text */
+  padding: 0.25rem 0.5rem; /* Even more compact */
+}
+
+/* For the expense items specifically */
+.expense-item input,
+.compact-expense-item input {
+  font-size: 0.8125rem; /* 13px */
+  padding: 0.25rem 0.5rem;
+  height: auto; /* Remove fixed height if any */
+}
+
+/* For placeholder text */
+.input-field::placeholder {
+  font-size: 0.8125rem;
+  color: #8c7b6b;
+  opacity: 0.7;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #6f4e37;
+  box-shadow: 0 0 0 1px rgba(111, 78, 55, 0.2);
+}
+
+/* Payer Confirmation UI */
+.payer-confirmation {
+  animation: fadeIn 0.5s ease;
+}
+/* Payer Confirmation Compact Styles */
+.payer-confirmation h2 {
+  font-size: 1.25rem;
+}
+.expense-summary {
+  background-color: #faf7f2;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #6f4e37;
+}
+
+.suggested-payer-card {
+  background-color: #fffaf0;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 2px dashed #d2b48c;
+  text-align: center;
+}
+
+.payer-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #6f4e37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 1rem;
+}
+
+.payer-details {
+  flex: 1;
+  text-align: center;
+}
+
+.payer-details p {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+}
+
+.alternative-prompt {
+  margin: 1.5rem 0;
+  color: #8c7b6b;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.payer-selection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.payer-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #f0e9e2;
+  border: 2px solid transparent;
+}
+
+.payer-option:hover {
+  background-color: #e0d3c7;
+}
+
+.payer-option.selected {
+  border-color: #6f4e37;
+  background-color: #e0d3c7;
+}
+
+.payer-option-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #8c7b6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.payer-option span {
+  font-size: 0.875rem;
+}
+
+/* Detailed debts styling */
+.debts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.debt-card {
+  background-color: #faf7f2;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border-left: 3px solid #d2b48c;
+  transition: transform 0.2s ease;
+  font-size: 0.875rem;
+}
+
+.debt-card:hover {
+  transform: translateY(-2px);
+}
+
+.debt-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0d3c7;
+}
+
+.debt-header h3 {
+  font-size: 0.875rem;
+}
+
+.debtor-avatar {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background-color: #6f4e37 !important;
+  color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: bold !important;
+  margin-right: 0.75rem !important;
+  flex-shrink: 0 !important;
+}
+
+.debt-item {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0;
+  border-bottom: 1px dashed #e0d3c7;
+}
+
+.debt-avatar {
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 50% !important;
+  background-color: #8c7b6b !important;
+  color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 0.75rem !important;
+  font-weight: bold !important;
+  margin-right: 0.5rem !important;
+  flex-shrink: 0 !important;
+}
+
+.debt-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Colors for owes/owed */
+.owed {
+  color: #2e7d32;
+}
+
+.owes {
+  color: #c62828;
+}
+
+.balance-item .owed {
+  color: #2e7d32;
+}
+
+.balance-item .owes {
+  color: #c62828;
+}
+
+.debt-card .owed {
+  color: #2e7d32;
+}
+
+.debt-card .owes {
+  color: #c62828;
+}
+
+.total-balance {
+  font-size: 0.875rem;
+}
+
+.total-balance .owed {
+  color: #2e7d32;
+}
+
+.total-balance .owes {
+  color: #c62828;
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Toast Notifications */
+.Toastify__toast {
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem;
+}
+
+.Toastify__toast--success {
+  background-color: #66bb6a;
+  color: white;
+}
+
+.Toastify__toast--error {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.Toastify__toast-body {
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .debts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .group-detail-container {
+    padding: 0.5rem;
+  }
+/* Compact Add Expense Styles */
+.expense-card {
+  padding: 0.75rem;
+}
+  .expense-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .expense-item .flex {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .expense-item input {
+    width: 100%;
+  }
+
+  .left-column .card {
+    flex: none;
+  }
+
+  .payer-selection {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+  .compact-expense-item {
+  padding: 0.25rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #faf7f2;
+  border-radius: 0.25rem;
+}
+
+.compact-expense-item label {
+  flex: 1;
+  color: #6f4e37;
+  font-size: 0.875rem;
+}
+
+.compact-expense-item .flex {
+  flex: 2;
+  display: flex;
+  gap: 0.5rem;
+}
+}
+
+
+.balance-info {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.owesred {
+color: #d32f2f;
+}
+
+.owedgreen{
+  color: #2e7d32;
+}
+
+.allsettled{
+  color: #2d8103;
+}

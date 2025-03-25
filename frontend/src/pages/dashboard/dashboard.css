@@ -1,0 +1,267 @@
+/* Dashboard.css */
+
+/* Base container styles */
+.dashboard-container {
+  background-color: #faf7f2; /* Lighter, warmer background */
+  padding: 1.5rem;
+  min-height: 100vh;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Dashboard Header Area */
+.dashboard-header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(111, 78, 55, 0.08);
+}
+
+.dashboard-header {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #3c2218; /* Darker, richer coffee color */
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Create group button */
+.create-group-btn {
+  background-color: #6f4e37;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  min-width: 120px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(111, 78, 55, 0.2);
+  font-size: 0.875rem;
+}
+
+.create-group-btn:hover {
+  background-color: #5a3c2c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(111, 78, 55, 0.3);
+}
+
+.icon-plus {
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+/* Groups Grid */
+.groups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+}
+
+/* Group Card - modern, clean design */
+.group-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  padding: 0;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(111, 78, 55, 0.04);
+  position: relative;
+}
+
+.group-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(111, 78, 55, 0.12);
+  border-color: rgba(111, 78, 55, 0.08);
+}
+
+.group-card-content {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.group-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #3c2218; /* Darker coffee color */
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.group-card-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 13rem;
+  height: 2px;
+  background-color: #6f4e37;
+  opacity: 0.4;
+}
+
+.group-card-description {
+  color: #6f4e37;
+  margin-bottom: 1rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+.group-card-members {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(111, 78, 55, 0.08);
+}
+
+.members-avatars {
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+/* Avatar style - modern */
+.avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #6f4e37;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  margin-right: -8px;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.members-count {
+  color: #6f4e37;
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* Loading Spinner - updated for modern feel */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.loading-spinner div {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid rgba(111, 78, 55, 0.1);
+  border-top-color: #6f4e37;
+  border-radius: 50%;
+  animation: spin 0.8s cubic-bezier(0.4, 0.2, 0.6, 0.8) infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* No Groups Message - modern styling */
+.no-groups-message {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  color: #6f4e37;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  margin-top: 1.5rem;
+  width: 100%;
+  border: 1px solid rgba(111, 78, 55, 0.04);
+}
+
+.no-groups-message p {
+  margin-bottom: 1.5rem;
+  font-size: 0.9375rem;
+  color: #4a2c2a;
+  line-height: 1.5;
+}
+
+.no-groups-message .create-group-btn {
+  margin: 0 auto;
+  display: inline-flex;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  .dashboard-header-area {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .dashboard-header {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
+  .groups-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .groups-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .group-card-content {
+    padding: 1rem;
+  }
+
+  .group-card-title {
+    font-size: 1rem;
+  }
+
+  .group-card-description {
+    font-size: 0.75rem;
+    -webkit-line-clamp: 2;
+  }
+}

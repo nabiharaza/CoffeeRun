@@ -1,0 +1,82 @@
+/* Home.css */
+
+/* Container for the home page */
+.home-container {
+    background-color: #f8f9fa; /* Light background color for simplicity */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #333; /* Dark text for contrast */
+    text-align: center;
+    padding: 2rem;
+    flex-direction: column;
+  }
+  
+  /* Hero Image styles */
+  .hero-image {
+    width: 120px; /* Set the width to a smaller size */
+    height: auto;
+    object-fit: contain;
+    margin-top: 1rem; /* Adds spacing above the image */
+    margin-bottom: 2rem; /* Adds spacing below the image */
+    transition: transform 0.3s ease;
+    padding-top: 20px;
+  }
+  
+  /* When hovering over the image */
+  .hero-image:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+
+  }
+  
+  /* Content inside the home container */
+  .home-content {
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Title */
+  .home-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Description text */
+  .home-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+  }
+  
+  /* Button styles */
+  .home-button {
+    background-color: #f6ad55;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #ed8936;
+    transform: scale(1.05);
+  }
+  
+  /* Optional Background Decoration */
+  .home-background {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: 1rem;
+    filter: blur(4px);
+  }
+  
