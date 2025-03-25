@@ -31,8 +31,9 @@ So, whose buying me coffee today? ☕️
 ## 🎥 Video Demo
 - Want to see a quick video tutorial/demo? 
 - Here, check out the [YouTube video](https://youtu.be/hVpvOpddRMY).
+
 <div align="center">
-  <img src="docs/coffee-run-demo.gif" alt="coffee-run-demo" width="75%">
+  <img src="docs/coffee-run-demo.gif" alt="coffee-run-demo" title="Coffee Run Demo" width="75%">
 </div>
 
 ## Tech Stack
