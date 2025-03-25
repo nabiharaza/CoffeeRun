@@ -52,7 +52,7 @@ button {
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -469,11 +469,11 @@ h1:after {
 
 /* Footer */
 footer {
-  background-color: #6f4e37;
+  background-color: #6f4e37cc;
   color: #fff;
-  padding: 1.5rem;
   text-align: center;
   margin-top: auto;
+  border-radius: 8px 8px 0 0;
 }
 
 footer .footer-content {
