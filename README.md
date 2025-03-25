@@ -1,6 +1,7 @@
 # Coffee Run
+<img src="https://cdn-icons-png.freepik.com/512/5125/5125143.png" alt="Coffee Run" width="100">
 
-<img alt="Expense Sharing Demo" src="/Users/nabiharaza/PycharmProjects/CoffeeRun/frontend/src/images/coffeeimg.png" title="Coffee Run"/>
+
 
 A web application for tracking shared expenses among groups with automatic balance calculations and next-payer suggestions.
 
