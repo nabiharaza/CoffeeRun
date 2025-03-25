@@ -4,7 +4,6 @@
 .dashboard-container {
   background-color: #faf7f2; /* Lighter, warmer background */
   padding: 1.5rem;
-  min-height: 100vh;
 }
 
 .dashboard-content {

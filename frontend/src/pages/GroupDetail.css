@@ -266,7 +266,7 @@
 
 /* Form elements */
 .input-field {
-  width: 100%;
+  width: 95%;
   padding: 5px;
   border: 1px solid #d2b48c;
   border-radius: 20px;
@@ -580,7 +580,7 @@
   }
 
   .expense-item input {
-    width: 100%;
+    width: 95%;
   }
 
   .left-column .card {

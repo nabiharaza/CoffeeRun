@@ -53,7 +53,7 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <div className="dashboard-content">
         <div className="dashboard-header-area">
-          <h1 className="dashboard-header">My Groups</h1>
+          <h1 className="dashboard-header">My Groups Dashboard</h1>
 
           {/* Create Group Button */}
           <Link to="/groups/new" className="create-group-btn">

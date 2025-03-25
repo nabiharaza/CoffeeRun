@@ -1,3 +1,7 @@
 .btn-group {
     justify-content: center;
 }
+
+.add-user-btn {
+    margin-left: 1rem;
+}

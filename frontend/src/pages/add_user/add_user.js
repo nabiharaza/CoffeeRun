@@ -75,9 +75,9 @@ const Add_user = () => {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="flex-1 bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition duration-200 disabled:opacity-50"
+                className="flex-1 bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition duration-200 disabled:opacity-50 add-user-btn"
               >
-                {isLoading ? 'Creating...' : 'Add Person'}
+                {isLoading ? 'Creating...' : 'Add User'}
               </button>
             </div>
           </form>
