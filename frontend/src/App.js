@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
-
 import Navbar from './components/Navbar';
+import Footer from './pages/footer/Footer';
 import Dashboard from './pages/dashboard/dashboard';
 import GroupDetail from './pages/GroupDetail';
 import Create_group from './pages/create_group/create_group';
@@ -33,6 +33,7 @@ function App() {
 
           </Routes>
         </main>
+        <Footer />
         <ToastContainer position="bottom-right" />
       </div>
     </Router>
