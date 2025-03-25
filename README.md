@@ -1,5 +1,5 @@
 # Coffee Run
-<img src="https://cdn-icons-png.freepik.com/512/5125/5125143.png" alt="Coffee Run" width="100">
+<img src="https://media1.tenor.com/m/2deCGNDJiA4AAAAd/hot-coffee-coffee.gif" alt="Coffee Run" width="250">
 
 
 
@@ -34,7 +34,7 @@ So, whose buying me coffee today? ☕️
 ## Installation
 
 ### Prerequisites
-- Python 3.7+
+- Python 3.10+
 - Node.js 14+
 - PostgreSQL
 - pip & npm
@@ -64,7 +64,8 @@ CoffeeRun/
    git clone https://github.com/your-repo/expense-sharing-app.git
    cd CoffeeRun/
    ```
-2. DB is running remotely but you can also create your own database with the script in `backend/scripts/init.sql`  
+2. DB is running remotely but you can also create your own database with the script in `backend/scripts/init.sql` 
+   - **Imp Note: Change the `utils/db.py` to match your database credentials**
 
 
 3. Build and Run with Docker Compose
