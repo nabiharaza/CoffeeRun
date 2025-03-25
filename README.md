@@ -63,7 +63,7 @@ CoffeeRun/
 │   │   ├── App.js            # Main application
 │   ├── package.json          # Frontend dependencies
 ````
-### How to run the application
+### How to run the application ⚙️
 1. Clone the repo:
    ```bash
    git clone https://github.com/nabiharaza/CoffeeRun.git
@@ -73,7 +73,7 @@ CoffeeRun/
    - **Imp Note: Change the `utils/db.py` to match your database credentials**
 
 
-3. Build and Run with Docker Compose
+3. Build and Run with Docker Compose 🐳
    ```bash
     docker-compose up --build
    ```
@@ -93,7 +93,7 @@ CoffeeRun/
 - Frontend: Modify files in `frontend/`.
 - Database: Connect to `localhost:5400` with credentials `postgres:postgres`.]
 
-### *Assumptions and Caveats*
+### Assumptions and Caveats 🌵
 - User authentication and authorization is not implemented.
 - Users cannot be added/removed once the group is created.
 - Searching is not implemented for groups
