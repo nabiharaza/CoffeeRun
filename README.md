@@ -1,9 +1,10 @@
-# Expense Sharing Application
+# Coffee Run
 
 <img alt="Expense Sharing Demo" src="/Users/nabiharaza/PycharmProjects/CoffeeRun/frontend/src/images/coffeeimg.png" title="Coffee Run"/>
 
 A web application for tracking shared expenses among groups with automatic balance calculations and next-payer suggestions.
 
+So, whose buying me coffee today? ☕️
 ## Features
 
 - 👥 **User Management** - Create user profiles
