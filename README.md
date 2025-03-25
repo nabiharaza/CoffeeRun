@@ -60,16 +60,20 @@ CoffeeRun/
 1. Clone the repo:
    ```bash
    git clone https://github.com/your-repo/expense-sharing-app.git
-   cd expense-sharing-app/
+   cd CoffeeRun/
    ```
 2. DB is running remotely but you can also create your own database with the script in `backend/scripts/init.sql`  
+
+
 3. Build and Run with Docker Compose
    ```bash
     docker-compose up --build
    ```
-  - Frontend: http://localhost:3000
-  - API: http://localhost:5001
-  - Database: localhost:5400 (exposed for debugging).
+   - Frontend: http://localhost:3000
+   - API: http://localhost:5001
+   - Database: localhost:5400 (exposed for debugging).
+   
+
 4. Stop the Application
    ```bash
    docker-compose down
