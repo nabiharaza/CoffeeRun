@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from utils.db import get_db_connection
+from backend.utils.db import get_db_connection
 import datetime
 
 bp = Blueprint('expenses', __name__, url_prefix='/api/expenses')

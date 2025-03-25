@@ -1,5 +1,4 @@
-import random
-from services.balance_calculator import calculate_balances
+from backend.services.balance_calculator import calculate_balances
 
 
 def determine_next_payer(group_id, cursor):

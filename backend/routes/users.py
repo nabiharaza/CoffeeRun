@@ -1,7 +1,7 @@
 from sqlite3 import IntegrityError
 
 from flask import Blueprint, request, jsonify
-from utils.db import get_db_connection
+from backend.utils.db import get_db_connection
 
 bp = Blueprint('users', __name__, url_prefix='/api/users')
 

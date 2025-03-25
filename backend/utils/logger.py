@@ -1,5 +1,5 @@
 import logging
-from config import Config
+from backend.config import Config
 
 
 def setup_logger(name):
