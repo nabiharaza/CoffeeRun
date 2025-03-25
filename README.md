@@ -1,15 +1,27 @@
-# CoffeeRun
-A Small Project to solve smallest problem - Who is going to pay today?!
+# Expense Sharing Backend
 
-# Coffee Sharing Backend
-## Initial Setup
-Python Flask application with:
-- PostgreSQL database connection
-- CORS support
-- Basic user routes (GET all users, POST new user)
+A Flask-based backend for managing shared expenses among groups.
 
-## Environment Variables
-- DB_HOST: Database host
-- DB_NAME: Database name
-- DB_USER: Database user
-- DB_PASSWORD: Database password
+## Features
+- User management
+- Group creation and management
+- Expense tracking
+- Balance calculations
+- Next payer recommendation
+- Transaction history
+
+## API Endpoints
+- `/api/users` - User management
+- `/api/groups` - Group management
+- `/api/expenses` - Expense tracking
+- `/api/groups/<id>/balances` - Group balances
+- `/api/groups/<id>/next-payer` - Next payer suggestion
+
+## Development Setup
+1. Install dependencies: `pip install -r requirements.txt`
+2. Set up PostgreSQL database
+3. Configure environment variables in `.env` file
+4. Run: `python app.py`
+
+## Deployment
+Configure WSGI server (Gunicorn recommended) for production.
