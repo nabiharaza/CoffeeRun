@@ -46,6 +46,8 @@ CoffeeRun/
 ├── backend/
 │   ├── main.py               # Flask application
 │   ├── requirements.txt      # Python dependencies
+│   ├── scripts               # Scripts for initialization
+│   │   ├── init.sql          # Database initialization script  
 ├── frontend/
 │   ├── public/
 │   ├── src/
