@@ -1,5 +1,5 @@
 # Coffee Run
-<div style="text-align: center;">
+<div align="center">
   <img src="https://media1.tenor.com/m/2deCGNDJiA4AAAAd/hot-coffee-coffee.gif" alt="Coffee Run" width="250" style="pointer-events: none;">
 </div>
 
@@ -9,7 +9,7 @@ A simple web application for tracking shared expenses among groups with automati
 
 So, whose buying me coffee today? ☕️
 
-<div style="text-align: center;">
+<div align="center">
   <img src="docs/sample-dashboard.png" alt="sample-dashboard" width="75%">
 </div>
 
