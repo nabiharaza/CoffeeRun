@@ -3,6 +3,7 @@ const API_URL = 'http://localhost:5001/api';
 // Common fetch wrapper
 const fetchWrapper = async (url, options = {}) => {
   try {
+    console.log(`Making request to: ${API_URL}${url}`); // Log the request URL
     const response = await fetch(`${API_URL}${url}`, {
       headers: {
         'Content-Type': 'application/json',
@@ -11,6 +12,7 @@ const fetchWrapper = async (url, options = {}) => {
     });
 
     if (!response.ok) {
+      console.log('Response status:', response.status); // Log HTTP status
       const errorData = await response.json();
       throw new Error(errorData.error || 'Request failed');
     }
