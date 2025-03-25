@@ -22,6 +22,7 @@ So, whose buying me coffee today? ☕️
 - 🔄 **Next Payer** - Smart suggestion for who should pay next
 - 📊 **Transaction History** - Full audit trail of all expenses
 
+
 ## Tech Stack
 
 **Frontend:**
@@ -62,7 +63,7 @@ CoffeeRun/
 │   │   ├── App.js            # Main application
 │   ├── package.json          # Frontend dependencies
 ````
-### Backend Setup
+### How to run the application
 1. Clone the repo:
    ```bash
    git clone https://github.com/nabiharaza/CoffeeRun.git
@@ -90,4 +91,10 @@ CoffeeRun/
 ### Development
 - Backend: Edit files in `backend/`, then rebuild with docker-compose up --build.
 - Frontend: Modify files in `frontend/`.
-- Database: Connect to `localhost:5400` with credentials `postgres:postgres`.
+- Database: Connect to `localhost:5400` with credentials `postgres:postgres`.]
+
+### *Assumptions and Caveats*
+- User authentication and authorization is not implemented.
+- Users cannot be added/removed once the group is created.
+- Searching is not implemented for groups
+- Error handling is limited.
