@@ -24,7 +24,7 @@ So, whose buying me coffee today? ☕️
 
 ## Top Level Design
 <div align="center">
-  <img src="docs/top-level-design.png" alt="top-level-design" width="75%">
+  <img src="docs/top-level-design.png" alt="top-level-design" title="Top Level Design" width="75%">
 </div>
 
 ## Tech Stack
