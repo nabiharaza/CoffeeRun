@@ -1,13 +1,13 @@
 from flask import Blueprint, jsonify
-from utils.db import get_db_connection
+from utils.db import create_connection
 
 bp = Blueprint('group_details', __name__, url_prefix='/api/groups')
 
 
-@bp.route('/<int:group_id>', methods=['GET'])
+@bp.route('/api/<int:group_id>', methods=['GET'])
 def get_group(group_id):
     """Get detailed information about a specific group"""
-    conn = get_db_connection()
+    conn = create_connection()
     if not conn:
         return jsonify({'error': 'Database connection failed'}), 500
 
@@ -33,3 +33,4 @@ def get_group(group_id):
         return jsonify({'error': str(e)}), 400
     finally:
         conn.close()
+
