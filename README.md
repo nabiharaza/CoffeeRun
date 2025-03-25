@@ -22,17 +22,21 @@ So, whose buying me coffee today? ☕️
 - 🔄 **Next Payer** - Smart suggestion for who should pay next
 - 📊 **Transaction History** - Full audit trail of all expenses
 
+## Top Level Design
+<div align="center">
+  <img src="docs/top-level-design.png" alt="top-level-design" width="75%">
+</div>
 
 ## Tech Stack
 
 **Frontend:**
-- React.js
+- React.js (18.2.0)
 - React Router
 - React Toastify
 - Tailwind CSS
 
 **Backend:**
-- Python Flask
+- Python Flask (3.10)
 - Flask-CORS
 - psycopg2 (PostgreSQL adapter)
 
@@ -93,8 +97,11 @@ CoffeeRun/
 - Frontend: Modify files in `frontend/`.
 - Database: Connect to `localhost:5400` with credentials `postgres:postgres`.]
 
-### Assumptions and Caveats 🌵
+### Assumptions
+- Debts are only paid via paying for others coffee expense.
+
+### Limitations and Caveats 🌵
 - User authentication and authorization is not implemented.
 - Users cannot be added/removed once the group is created.
-- Searching is not implemented for groups
+- Searching capability is not available for groups
 - Error handling is limited.
