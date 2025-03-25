@@ -143,6 +143,5 @@ form div label {
 
 form div input,
 form div textarea {
-  width: 100%;
   text-align: left;
 }
