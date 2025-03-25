@@ -1,5 +1,7 @@
 # Coffee Run
-<img src="https://media1.tenor.com/m/2deCGNDJiA4AAAAd/hot-coffee-coffee.gif" alt="Coffee Run" width="250">
+<div style="text-align: center;">
+  <img src="https://media1.tenor.com/m/2deCGNDJiA4AAAAd/hot-coffee-coffee.gif" alt="Coffee Run" width="250" style="pointer-events: none;">
+</div>
 
 
 
