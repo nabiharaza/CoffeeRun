@@ -9,7 +9,10 @@ A simple web application for tracking shared expenses among groups with automati
 
 So, whose buying me coffee today? ☕️
 
-![sample-dashboard.png](docs/sample-dashboard.png)
+<div style="text-align: center;">
+  <img src="docs/sample-dashboard.png" alt="sample-dashboard" width="75%">
+</div>
+
 ## Features
 
 - 👥 **User Management** - Create user profiles
