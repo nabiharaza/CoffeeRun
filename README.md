@@ -3,7 +3,7 @@
 
 
 
-A web application for tracking shared expenses among groups with automatic balance calculations and next-payer suggestions.
+A simple web application for tracking shared expenses among groups with automatic balance calculations, ensuring fair cost distribution and eliminating the awkward *"Who pays?"* moment!
 
 So, whose buying me coffee today? ☕️
 ## Features
