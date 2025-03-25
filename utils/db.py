@@ -7,10 +7,11 @@ def get_db_connection():
     """Create and return a PostgreSQL database connection"""
     try:
         conn = psycopg2.connect(
-            host=os.getenv('DB_HOST'),
-            database=os.getenv('DB_NAME'),
-            user=os.getenv('DB_USER'),
-            password=os.getenv('DB_PASSWORD')
+            host="ep-winter-salad-a4avgzam-pooler.us-east-1.aws.neon.tech",
+            user="neondb_owner",
+            password="npg_lwuQ9aCbVRg4",
+            database="coffee_tracker",
+            port=5432
         )
         return conn
     except OperationalError as e:

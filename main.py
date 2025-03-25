@@ -11,4 +11,4 @@ app.register_blueprint(users_bp)
 app.register_blueprint(groups_bp)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)

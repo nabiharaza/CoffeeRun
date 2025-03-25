@@ -21,7 +21,7 @@ A Flask-based backend for managing shared expenses among groups.
 1. Install dependencies: `pip install -r requirements.txt`
 2. Set up PostgreSQL database
 3. Configure environment variables in `.env` file
-4. Run: `python app.py`
+4. Run: `python main.py`
 
 ## Deployment
 Configure WSGI server (Gunicorn recommended) for production.
