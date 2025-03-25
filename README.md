@@ -34,6 +34,7 @@ So, whose buying me coffee today? ☕️
 <div align="center">
   <img src="docs/coffee-run-demo.gif" alt="coffee-run-demo" width="75%">
 </div>
+
 ## Tech Stack
 
 **Frontend:**
