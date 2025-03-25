@@ -46,20 +46,20 @@ def create_connection():
     """Create and return a PostgreSQL database connection and cursor"""
     try:
         logging.info("Creating database connection")
-        conn = psycopg2.connect(
-            dbname="coffee_tracker",
-            user="nabiharaza",
-            password="",
-            host="127.0.0.1",
-            port="5432",
-        )
-
         # conn = psycopg2.connect(
-        #     dbname=os.getenv("DB_NAME", ""),
-        #     user=os.getenv("DB_USER", ""),
-        #     password=os.getenv("DB_PASSWORD", ""),
-        #     host=os.getenv("DB_HOST", ""),
-        #     port=os.getenv("DB_PORT", "5432"))
+        #     dbname="coffee_tracker",
+        #     user="nabiharaza",
+        #     password="",
+        #     host="127.0.0.1",
+        #     port="5432",
+        # )
+
+        conn = psycopg2.connect(
+            dbname=os.getenv("DB_NAME", ""),
+            user=os.getenv("DB_USER", ""),
+            password=os.getenv("DB_PASSWORD", ""),
+            host=os.getenv("DB_HOST", ""),
+            port=os.getenv("DB_PORT", "5432"))
         cursor = conn.cursor(cursor_factory=extras.DictCursor)  # Create cursor here
         return conn, cursor  # Return both
     except OperationalError as e:
