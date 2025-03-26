@@ -32,12 +32,10 @@ So, whose buying me coffee today? ☕️
 - Want to see a quick video tutorial/demo? 
 - Here, check out the [YouTube video](https://youtu.be/hVpvOpddRMY).
 
-<div align="center">
-  <img src="docs/coffee-run-demo.gif" alt="coffee-run-demo" title="Coffee Run Demo" width="75%">
-</div>
+## Documentation
+- Click here for detailed [Design Document](docs/Coffee%20Run%20Design%20Document.pdf)
 
 ## Tech Stack
-
 **Frontend:**
 - React.js (18.2.0)
 - React Router
