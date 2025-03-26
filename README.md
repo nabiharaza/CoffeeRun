@@ -101,7 +101,7 @@ CoffeeRun/
    ```
    - To remove volumes: `docker-compose down -v`
    
-### Development
+### Local Development
 - Backend: Edit files in `backend/`, then rebuild with docker-compose up --build.
 - Frontend: Modify files in `frontend/`.
 - Database: Connect to `localhost:5400` with credentials `postgres:postgres`.]
