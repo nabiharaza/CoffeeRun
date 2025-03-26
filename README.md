@@ -106,8 +106,9 @@ CoffeeRun/
 - Frontend: Modify files in `frontend/`.
 - Database: Connect to `localhost:5400` with credentials `postgres:postgres`.]
 
-### Assumptions
-- Debts are only paid via paying for others coffee expense.
+### Assumptions 🤔
+- Debts are settled *exclusively* by covering someone else’s coffee expense.
+- Even if the app suggests paying for `person A`, the user can override it, considering scenarios where someone may have forgotten their wallet or faced issues with Apple Pay/e-wallet.
 
 ### Limitations and Caveats 🌵
 - User authentication and authorization is not implemented.
